@@ -1,0 +1,40 @@
+body{
+    position: relative;
+    height: 100vh;
+    background-image:linear-gradient(to bottom right,black,rgb(4, 0, 255),black);
+}
+.form1{
+    position: absolute;
+    top: 280px;
+    left: 810px;
+    height: 120px;
+    width: 300px;
+    border-radius: 5px;
+    /* background-color: rgb(9, 255, 0); */
+    opacity: 0.4;
+    z-index: 2;
+}
+h1{
+    font-size: 30px;
+    font-style: italic;
+    text-align: center;
+}
+::placeholder{
+    color: lime !important;
+    text-align: center;
+    opacity: 1;
+}
+.consumo{
+    color: lime !important;
+    text-align: center !important;
+}
+.btn-calcular{
+    display: flex;
+    justify-content: left;
+    place-items: left;
+}
+.Limpar{
+    display: flex;
+    justify-content: right;
+    place-items: right;
+}

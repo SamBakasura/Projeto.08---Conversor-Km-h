@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./javascript/conversor.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>A</title>
+</head>
+<body>
+    <div class="form1"></div>
+    <div class="container">
+        <div class="row justify-content-center align-items-center vh-100 fundo3">
+            <div class="col-auto bg-secondary p-5 rounded fundo2">
+
+                <div class="row">
+                    <div class="col">
+                        <label class=" p-2 fa-bold text-success h1 fw-bold bg-black" id="distancia">[] [] [] [] [] [] []</label>
+                    </div>
+                </div>
+                <form onsubmit="return false">
+
+                <div class="row">
+                    <div class="col">
+                            <label type="number" name="consumo" id="consumo" placeholder="consumo" class="form-control bg-black text-success consumo">Consumo</label>
+                    </div>
+                </div>
+
+                <br>
+                <br>
+
+                        <!--Imput do 1 código-->
+                <div class="row">
+                    <div class="col">
+                        <label for="num01" class="form-lable fw-bold text-light fundo3"><i>Tempo</i></label>
+                            <input type="number" name="tempo" id="tempo" class="form-control"/>
+                </div>
+                    </div>
+                        <!--Imput do 2 código-->       
+                <div class="row">
+                    <div class="col">
+                        <label for="num02" class="form-lable fw-bold text-light"><i>Velocidade</i></label>
+                            <input type="number" name="velocidade" id="velocidade" class="form-control"/>
+                    </div>
+                </div>
+                
+                
+                        <!--Imagem de Fundo-->
+                        <div class="row justify-content-center">
+                            <div class="col align-itens-center mt-2">
+                                <!-- <img class="img-thumbnail" id="imgOperacao"/> -->
+                            </div>
+                        </div>  
+                        <br>
+                        <!--Resultado-->
+                        <div class="row">
+                            <div class="col">
+                                <label class="form-label fa-bold text-light"></label>
+                            </div>
+                        <!--Botão de Calcular e Botão de Limpar-->
+                        <div class="row">
+                            <div class="col">  
+                                <button class = "btn btn-primary mt-2" name="btn-calcular" id="btn-calcular" onclick="calcular()">
+                                    Calcular
+                                </button>
+                            </div>
+
+                            <div class="col">
+                                <button class="btn btn-danger mt-2" name="limpar" id="Limpar">Apagar</button>
+                            </div>
+                        </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- <script>
+        //Declaração da Soma
+            function somar(){
+        //Declaração das Variáveis
+            let num01;
+            let num02;
+            let resultado;
+        //Entrada de dado do número 1
+        num01 = parseInt(document.querySelector('#num01').value);
+        num02 = parseInt(document.querySelector('#num02').value);
+
+        resultado = num01 + num02;
+        
+        document.querySelector('#resultado').innerHTML = resultado;
+    }
+</script> -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</html>
